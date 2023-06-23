@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* react slick carousel */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+/* slider arrow customization */
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  font-size: 40px;
+}
+
+.slick-next:before {
+  margin-left: -45px;
+}
+
+.slick-prev {
+  z-index: 999;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #94c2ff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
